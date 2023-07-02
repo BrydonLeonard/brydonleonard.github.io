@@ -11,9 +11,9 @@ categories: code computer science
 
 You may have come across examples of people online making pictures with dice, like the ones below. I had, and I was interested in trying something similar myself. 
 
-| | |
-|---|---|
-| <iframe id="reddit-embed" src="https://www.redditmedia.com/r/Damnthatsinteresting/comments/rxdh0b/dice_art/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe> <iframe id="reddit-embed" src="https://www.redditmedia.com/r/nextfuckinglevel/comments/jhuq2e/using_dice_to_create_art_is_extraordinary/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe> | <iframe id="reddit-embed" src="https://www.redditmedia.com/r/DIY/comments/a411hu/i_made_a_portrait_of_a_friend_out_of_13000_dice/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="1274" width="640" scrolling="no"></iframe> |
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/Damnthatsinteresting/comments/rxdh0b/dice_art/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/nextfuckinglevel/comments/jhuq2e/using_dice_to_create_art_is_extraordinary/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="620" width="640" scrolling="no"></iframe>
 
 Being a software developer, half of the fun for me lay in writing a program to turn pictures into solutions _for_ me. Making pictures with dice is actually fairly straightfoward, since each die is effectively a single pixel. Finding a "solution" (what I'm going to call the output of these programs that tell me where to put things) is a case of:
 1. Finding a picture
@@ -27,8 +27,8 @@ Here's an example with a stock photo:
 
 | | |
 | :---: | :---: |
-| The original image:<br/>![original image](../assets/images/algorithm-x/roll-1.png) | Scaled to a lower resolution:<br/>![scaled](../assets/images/algorithm-x/roll-2.png) |
-| Switched to grayscale:<br/>![grayscale](../assets/images/algorithm-x/roll-3.png) | Drop the colour depth:<br/>![colour depth decreased](../assets/images/algorithm-x/roll-4.png) |
+| The original image:<br/>![original image](/assets/images/algorithm-x/roll-1.png) | Scaled to a lower resolution:<br/>![scaled](/assets/images/algorithm-x/roll-2.png) |
+| Switched to grayscale:<br/>![grayscale](/assets/images/algorithm-x/roll-3.png) | Drop the colour depth:<br/>![colour depth decreased](/assets/images/algorithm-x/roll-4.png) |
 
 The solution output would then look something like:
 ```
@@ -54,7 +54,7 @@ Making pixel art with Lego is more *interesting* than dice for a few reasons:
 
 I rushed headfirst into my implementation, only to realise very quickly that placing the Lego bricks was a more complex task that I'd initially anticipated. I had, however, already gone out and bought a 1kg bag of "Lego" bricks, so I was committed. I haven't come across examples online of people solving the Lego pixel art problem, but the problem didn't seem unique enough that some abstraction of the same problem wouldn't have been solved. My first clue as to what problem I was actually solving came when I encountered [polyomino](https://en.wikipedia.org/wiki/Polyomino) puzzles, which involve placing a set of polyominos in a rectangle:
 
-![polyomino puzzle](../assets/images/algorithm-x/polyomino-puzzle.png)
+![polyomino puzzle](/assets/images/algorithm-x/polyomino-puzzle.png)
 *Donald Knuth [arXiv:cs/0011047](https://arxiv.org/abs/cs/0011047) [cs.DS]*
 
 > If this looks a little like Tetris, that's because the pieces in Tetris are [*tetrominoes*](https://en.wikipedia.org/wiki/Tetromino), which are polyominos, but only made up of four squares. Another type of polyomino you'll likely be familiar with are dominoes, which are made up of two squares.
@@ -88,7 +88,7 @@ Tying this back into the definition from Wikipedia,
 
 Now that we've covered exactly what an exact cover is, let's take a look at how we can generalize other types of puzzles to the exact same "pick some rows" problem that we discussed above. Let's say we have a 4x4 grid and we want to fill it with *monominoes* (1x1 polyominoes):
 
-![monomino puzzle](../assets/images/algorithm-x/puzzle-generalisation-1.png)
+![monomino puzzle](/assets/images/algorithm-x/puzzle-generalisation-1.png)
 
 Let's give each row in the grid a letter and each column a number. We'll also put a `1` in every grid cell that we want covered (that's all of them):
 ```
@@ -106,7 +106,7 @@ Now for the interesting bit: We lay out the grid's rows side-by-side to get a ne
 
 The last step to get back to our "pick some rows" problem is to take *every possible position* that we could place a monomino and make it a row in our new matrix (which I'll now call the *solution matrix*). If a given row corresponds to, say, a monomino being placed in cell A1 (like in the image below), that row will have a one in column A1 and 0 everywhere else. (We also remove the row of all ones, since that's our desired solution and not actually part of the puzzle)
 
-![monomino single placement example](../assets/images/algorithm-x/puzzle-generalisation-1-row-example.png)
+![monomino single placement example](/assets/images/algorithm-x/puzzle-generalisation-1-row-example.png)
 
 ```
   A1   A2   B1   B2 
@@ -118,15 +118,15 @@ The last step to get back to our "pick some rows" problem is to take *every poss
 
 Now, we're back to the same problem as earlier! In this specific example, we would actually pick *every* row to solve the problem. That makes sense, since we'll want to place a monomino in every possible position to completely cover the grid:
 
-![solved monomino](../assets/images/algorithm-x/puzzle-generalisation-1-solution.png)
+![solved monomino](/assets/images/algorithm-x/puzzle-generalisation-1-solution.png)
 
 To solidify the process of creating new solution matrices, let's look at another 2x2 grid that we want to cover with 2x1 dominos (placed horizontally or vertically):
 
-![domino puzzle](../assets/images/algorithm-x/puzzle-generalisation-2.png)
+![domino puzzle](/assets/images/algorithm-x/puzzle-generalisation-2.png)
 
 In this case, each row in the solution matrix will have *two* `1`s because each domino covers two cells in the grid. The two example piece placements `A` and `B` below, correspond to the solution matrix rows below:
 
-![domino puzzle row examples](../assets/images/algorithm-x/puzzle-generalisation-2-row-example.png)
+![domino puzzle row examples](/assets/images/algorithm-x/puzzle-generalisation-2-row-example.png)
 
 ```
   A1   A2   B1   B2 
@@ -280,7 +280,7 @@ A key observation in why DLX makes sense when implementing Algorithm X is that o
 
 There are undoubtedly other ways to address the issues above, but DLX is one way to do so. The DLX solution to the exact cover problem uses a two-dimensional circular doubly-linked list. Here's an example of one of these matrices; note how we're not storing any `0`s. Just the ones:
 
-![](../assets/images/algorithm-x/sparse-matrix.svg)
+![](/assets/images/algorithm-x/sparse-matrix.svg)
 
 With this type of matrix, if we want to find the next `1` to the right of the current node, instead of having to work our way through columns, checking each of them for a `1` in the right row, we can go straight there! Covering rows and colums is now also a lot more efficient, since we're just rearranging some pointers instead of shifting all of those rows. We also somewhat solve our space problem, since we're not longer storing all those useless `0`s. Counting is also more efficient with this approach, since it now has time complexity that's proportional to the number of `1`s in a column. 
 
@@ -308,7 +308,7 @@ Either way, here's one solution:
 
 | | | |
 | :---: | :---: | :---: |
-| The original image:<br/>![original image](../assets/images/algorithm-x/Poo.png) | The version that the algorithm tried to tile:<br/>![scaled](../assets/images/algorithm-x/LowResPoo.png) |  The result:<br/>![scaled](../assets/images/algorithm-x/TiledPoo.png) |
+| The original image:<br/>![original image](/assets/images/algorithm-x/Poo.png) | The version that the algorithm tried to tile:<br/>![scaled](/assets/images/algorithm-x/LowResPoo.png) |  The result:<br/>![scaled](/assets/images/algorithm-x/TiledPoo.png) |
 
 ### Closing out
 
