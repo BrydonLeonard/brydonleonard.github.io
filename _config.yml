@@ -12,6 +12,9 @@ theme: minima
 minima:
   date_format: "%Y-%m-%d"
 
+kramdown:
+  math_engine: mathjax
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

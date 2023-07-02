@@ -1,9 +1,11 @@
 source "https://rubygems.org"
 gem "minima", "~> 2.5"
 gem "github-pages", "~> 226", group: :jekyll_plugins
+gem 'jekyll-plantuml', '~> 1.1' 
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem 'asciidoctor-diagram'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
