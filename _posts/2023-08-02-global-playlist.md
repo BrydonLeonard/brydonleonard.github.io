@@ -2,7 +2,7 @@
 layout: post
 title:  "A trip around the world from the comfort of your Spotify account"
 date:   2023-08-02
-categories: code
+categories: projects show-and-tell
 ---
 
 # A trip around the world from the comfort of your Spotify account

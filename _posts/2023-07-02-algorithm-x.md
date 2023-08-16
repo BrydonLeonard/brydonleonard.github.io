@@ -2,7 +2,7 @@
 layout: post
 title:  "Exact cover, Algorithm X, and Lego"
 date:   2023-07-02
-categories: code computer science
+categories: learning
 ---
 
 # Exact covers, Algorithm X, and Lego
