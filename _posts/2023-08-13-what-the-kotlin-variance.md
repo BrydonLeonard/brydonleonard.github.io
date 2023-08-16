@@ -214,15 +214,16 @@ class Car
 class Motorbike
 ```
 
+### Isn't that just an unchecked cast?
 
-You'll have noticed that the example above uses a `for` loop, rather than `Iterable<T>::foreach`. That's because `foreach` casts each element in the list to the generic type of the list while iterating through them. So, swapping out the for loop for 
+This is _slightly_ different to a plain old unchecked cast, which could get us similar behaviour:
 
 ```kotlin
-list.forEach { println(v::class) }
+(list as MutableList<Vehicle>).add(Motorbike())
 ```
 
-results in 
+The difference is that the first example stays within the bounds of the types' covariance throughout, so the compiler is perfectly happy with us. Casting straight from `MutableList<Car>` to `MutableList<Vehicle>`, however, does _not_ stay within those bounds and even causes the Kotlin compiler to emit a warning:
 
-```kotlin
-java.lang.ClassCastException: class Motorbike cannot be cast to class Car
+```bash
+w: file:///C:/Dev/WhatTheKotlin/src/main/kotlin/Main.kt:11:11 Unchecked cast: MutableList<Car> to MutableList<Vehicle>
 ```
