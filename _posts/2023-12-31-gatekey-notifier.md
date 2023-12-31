@@ -60,7 +60,7 @@ Notifiers need credentials to subscribe to their hosueholds' MQTT topics. Flashi
     - A set of credentials for the MQTT topic
     - The name of the MQTT topic to which the notifier should subscribe
 
-![Notification flow](/assets/images/gate-key-notifier/registration.jpg)
+![Notification flow](/assets/images/gate-key-notifier/registration.png)
 8. The notifier uses the credentials to initialize its MQTT client (step 13).
 
 > If the user requests the notifier before the first poll, the first response would be `REGISTERED` and the notifier would never need to poll at all.

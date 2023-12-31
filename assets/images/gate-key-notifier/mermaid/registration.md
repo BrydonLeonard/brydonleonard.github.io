@@ -16,7 +16,7 @@ sequenceDiagram
             Notifier ->> HTTP API: register_device
             HTTP API ->> Device Manager: Check device
             Device Manager ->> HTTP API: pending
-            HTTP API ->> Notifier: PENDING
+            HTTP API ->> Notifier: ACCEPTED
         end
     and
         Resident ->> Telegram Bot: Add device 123
@@ -24,7 +24,6 @@ sequenceDiagram
         Telegram Bot ->> Resident: Added
     end
     note over Resident,HTTP API: The device is now registered on the server
-    Notifier ->> HTTP API: register_device
     Notifier ->> HTTP API: register_device
     HTTP API ->> Device Manager: Check device
     Device Manager ->> HTTP API: registered
