@@ -103,6 +103,6 @@ I've now got a little box that makes noises when people come to visit! There are
 
 Firstly, the notifier plays sounds when it connects to the MQTT broker. That's useful, but sometimes it momentarily disconnects from the broker in the middle of the night and the sounds are loud enough to wake me up. I'd like to have a grace period where it doesn't give up on the connection to avoid the spurious wake-up calls.
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Fautomation%2F2023%2F09%2F22%2Fgatekey-notifier.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-
 Finally, all notifiers currently listen to their own MQTT topics, but do it with a single shared set of credentials. I'm running the [dynamic security plugin](https://mosquitto.org/documentation/dynamic-security/) on my MQTT broker, so the next step is to use that to generate new users for each household on the fly. Once that's done, the notifier system is fully secured and ready to be used by others in the complex.
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Fautomation%2F2023%2F09%2F22%2Fgatekey-notifier.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
