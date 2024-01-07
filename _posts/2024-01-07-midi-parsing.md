@@ -66,22 +66,22 @@ Now that we know what to expect, let's look at a specific MIDI file. [This one i
                              00 00 00 87 |> The track is 135 bytes long
                                 00 c0 21 |>   Delta time =     0. [Channel  0] Switch to program 33
                              00 b0 07 7f |>   Delta time =     0. [Channel  0] Adjust controller 7 to value 127
-                             00 90 2d 4e |>   Delta time =     0. [Channel  0] Stop A3 with velocity 78
-                          81 01 80 2d 40 |>   Delta time =   129. [Channel  0] Start A3 with velocity 64
-                          81 67 90 30 51 |>   Delta time =   231. [Channel  0] Stop C4 with velocity 81
-                             78 90 32 4f |>   Delta time =   120. [Channel  0] Stop D4 with velocity 79
+                             00 90 2d 4e |>   Delta time =     0. [Channel  0] Start A3 with velocity 78
+                          81 01 80 2d 40 |>   Delta time =   129. [Channel  0] Stop A3 with velocity 64
+                          81 67 90 30 51 |>   Delta time =   231. [Channel  0] Start C4 with velocity 81
+                             78 90 32 4f |>   Delta time =   120. [Channel  0] Start D4 with velocity 79
                              ... Snip
-                             05 80 2d 40 |>   Delta time =     5. [Channel  0] Start A3 with velocity 64
-                          81 61 80 30 40 |>   Delta time =   225. [Channel  0] Start C4 with velocity 64
-                             0a 90 2d 4e |>   Delta time =    10. [Channel  0] Stop A3 with velocity 78
-                             5a 80 2d 40 |>   Delta time =    90. [Channel  0] Start A3 with velocity 64
+                             05 80 2d 40 |>   Delta time =     5. [Channel  0] Stop A3 with velocity 64
+                          81 61 80 30 40 |>   Delta time =   225. [Channel  0] Stop C4 with velocity 64
+                             0a 90 2d 4e |>   Delta time =    10. [Channel  0] Start A3 with velocity 78
+                             5a 80 2d 40 |>   Delta time =    90. [Channel  0] Stop A3 with velocity 64
                           83 05 ff 2f 00 |>   Delta time =   389. [Meta] END OF TRACK
 ```
 
 I found it interesting to see the MIDI file standard in action, so here are some notes to give you a little more insight:
 - This file has two tracks, though the first one was just used to configure the sequencer with meta-messages.
   - Because the meta messages are never sent to the synthesizer, they have no associated channel.
-- To give you a sneak peek into MIDI's binary encoding (see the references for more), `80` means "start a note on channel 0" while `90` means "stop a note on channel 0". You'll see those repeated several times on the left side above. 
+- To give you a sneak peek into MIDI's binary encoding (see the references for more), `90` means "start a note on channel 0" while `80` means "stop a note on channel 0". You'll see those repeated several times on the left side above. 
 - The `Switch to program 33` message sets up channel 0 to use the bass guitar program (33). If we switched that to 126, the song would be played [by a helicopter instead!](https://en.wikipedia.org/wiki/General_MIDI)
 
 ## References
