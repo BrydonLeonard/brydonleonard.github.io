@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "What the Kotlin? Again!"
-date:   2024-01-14
-categories: learning kotlin
+title:  "An intro to aviation - The pitot-static flight instruments"
+date:   2024-01-21
+categories: aviation
 ---
 
 # An intro to aviation - The pitot-static flight instruments
