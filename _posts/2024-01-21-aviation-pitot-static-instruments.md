@@ -1,4 +1,11 @@
-#aviation #blogpost
+---
+layout: post
+title:  "What the Kotlin? Again!"
+date:   2024-01-14
+categories: learning kotlin
+---
+
+# An intro to aviation - The pitot-static flight instruments
 
 ## Intro
 I got my private pilot's licence a few years ago. A big part of the fun for me was getting an insight into what's going on when I fly commercially. This series of blog posts will take a little look behind the curtain and hopefully make aviation a little more approachable. The first few posts are going to focus on aeroplanes themselves, as well as the instruments that pilots use to fly.
