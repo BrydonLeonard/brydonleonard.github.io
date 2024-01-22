@@ -73,3 +73,5 @@ The VSI may not seem useful, given that the altimeter's needle moving already sh
 [^6] CC BY-SA 3.0 DEED Image shared unmodified from [Mysid on wikipedia](https://en.wikipedia.org/wiki/File:Airspeed_indicator.svg)
 
 [^7] CC BY-SA 3.0 DEED image shared unmodified from [The High Fin Sperm Whale on wikipedia](https://en.wikipedia.org/wiki/File:Vertical_speed_indicator.PNG)
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Faviation%2F2024%2F01%2F21%2Faviation-pitot-static-instruments.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
