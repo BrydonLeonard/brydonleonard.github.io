@@ -127,4 +127,4 @@ for d in dirs:
 
 [^3]: If you're going to be streaming to YouTube, make sure to sign up for YouTube live early; it takes 24 hours for your account to be allowlisted to stream.
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2F%2Fhow-to%2Ftools%2F2024%2F01%2F28%2Fstream-setup.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Fhow-to%2Ftools%2F2024%2F01%2F28%2Fstream-setup.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
