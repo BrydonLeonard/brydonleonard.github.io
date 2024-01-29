@@ -116,7 +116,7 @@ but with reification, could be:
 
 ```
 inline fun <reified T> prettyPrintClassReified() {
-    // We now have access to T as if it's a pain old class.
+    // We now have access to T as if it's a plain old class.
     print(T::class.simpleName)
 }
 ```

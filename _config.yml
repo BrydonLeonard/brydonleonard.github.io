@@ -12,8 +12,6 @@ theme: minima
 minima:
   date_format: "%Y-%m-%d"
 
-markdown: kramdown
-
 kramdown:
   math_engine: mathjax
 

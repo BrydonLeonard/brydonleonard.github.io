@@ -18,7 +18,7 @@ There's a set of six basic flight instruments in most planes known as a "six pac
 
 ### The pitot-static system
 
-The pitot-static system works by comparing the static and pitot *air pressures*, each measured in hectopascals (hPa) (though the images in this blogpost are from American planes, which use inches of mercury).
+The pitot-static (pitot is pronounced "pea toe") system works by comparing the static and pitot *air pressures*, each measured in hectopascals (hPa) (though the images in this blogpost are from American planes, which use inches of mercury).
 
 ***Static*** air pressure is the pressure you feel when not moving at all. It's caused by all the air in the atmosphere above you pushing downwards and it decreases when you're in places with higher elevation. It's measured via little holes called static ports on the outside of the plane.
 
@@ -60,18 +60,18 @@ The VSI may not seem useful, given that the altimeter's needle moving already sh
 
 ## Footnotes
 
-[^1] Today, physical six packs are actually largely being replaced by electronic flight instrument systems (EFIS) like [the Garmin G3X](https://www.garmin.com/en-US/p/166058). The information they display is, however, largely the same and is gathered in the same ways.
+[^1]: Today, physical six packs are actually largely being replaced by electronic flight instrument systems (EFIS) like [the Garmin G3X](https://www.garmin.com/en-US/p/166058). The information they display is, however, largely the same and is gathered in the same ways.
 
-[^2] Because of variation in temperature, static pressure, and the position of the pitot tube (which might not be pointing straight into the airflow), the indicated airspeed (IAS) can be wrong. The true airspeed (TAS) is the actual speed of the plane through the air after the errors are corrected.
+[^2]: Because of variation in temperature, static pressure, and the position of the pitot tube (which might not be pointing straight into the airflow), the indicated airspeed (IAS) can be wrong. The true airspeed (TAS) is the actual speed of the plane through the air after the errors are corrected.
 
-[^3] QNH (and other Q-codes) aren't abbreviations. They're a standard set of codes that were invented in the days of morse codehttps://en.wikipedia.org/wiki/Q_code. They've seen continued use and expansion to today as useful shorthand in radio communication.
+[^3]: QNH (and other Q-codes) aren't abbreviations. They're a standard set of codes that were invented in the days of morse codehttps://en.wikipedia.org/wiki/Q_code. They've seen continued use and expansion to today as useful shorthand in radio communication.
 
-[^4] Another interesting reference pressure is an airfield's ***QFE***, which is the reference pressure that would make the altimeter show zero on the ground. The reference pressure that a pilot sets in the altimeter is essentially the "bottom" of the altimeter's scale (since when the static pressure increases all the way to the reference pressure the altimeter shows zero). As such, QFE is actually the same thing as the ambient pressure at the airfield. QNH is almost always higher than QFE since setting QNH makes the "bottom" of the altimeter's scale mean sea level, where the pressure is higher. It can be a confusing concept when thinking about airports at high altitude, since there isn't actually a sea below them, but one way to think of it is that if the ground disappeared and the aeroplane started falling, its altimeter would hit zero as it reached the sea below.
+[^4]: Another interesting reference pressure is an airfield's ***QFE***, which is the reference pressure that would make the altimeter show zero on the ground. The reference pressure that a pilot sets in the altimeter is essentially the "bottom" of the altimeter's scale (since when the static pressure increases all the way to the reference pressure the altimeter shows zero). As such, QFE is actually the same thing as the ambient pressure at the airfield. QNH is almost always higher than QFE since setting QNH makes the "bottom" of the altimeter's scale mean sea level, where the pressure is higher. It can be a confusing concept when thinking about airports at high altitude, since there isn't actually a sea below them, but one way to think of it is that if the ground disappeared and the aeroplane started falling, its altimeter would hit zero as it reached the sea below.
 
-[^5] CC BY-SA 4.0 DEED image shared unmodified from [Cjp24 on wikimedia commons](https://commons.wikimedia.org/wiki/File:Cessna_172_Skyhawk_II_-_Pitot_tube.jpg)
+[^5]: CC BY-SA 4.0 DEED image shared unmodified from [Cjp24 on wikimedia commons](https://commons.wikimedia.org/wiki/File:Cessna_172_Skyhawk_II_-_Pitot_tube.jpg)
 
-[^6] CC BY-SA 3.0 DEED Image shared unmodified from [Mysid on wikipedia](https://en.wikipedia.org/wiki/File:Airspeed_indicator.svg)
+[^6]: CC BY-SA 3.0 DEED Image shared unmodified from [Mysid on wikipedia](https://en.wikipedia.org/wiki/File:Airspeed_indicator.svg)
 
-[^7] CC BY-SA 3.0 DEED image shared unmodified from [The High Fin Sperm Whale on wikipedia](https://en.wikipedia.org/wiki/File:Vertical_speed_indicator.PNG)
+[^7]: CC BY-SA 3.0 DEED image shared unmodified from [The High Fin Sperm Whale on wikipedia](https://en.wikipedia.org/wiki/File:Vertical_speed_indicator.PNG)
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Faviation%2F2024%2F01%2F21%2Faviation-pitot-static-instruments.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
