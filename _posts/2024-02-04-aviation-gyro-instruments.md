@@ -6,9 +6,10 @@ categories: aviation
 ---
 
 The post follows on from [An intro to aviation - The pitot-static flight instruments](https://brydonleonard.github.io/aviation/2024/01/21/aviation-pitot-static-instruments.html). This time, I'll take a look at the last three instruments of the sixpack; the gyroscopic instruments.
+
 ## Gyroscopes
 
-Gyroscopes exhibit two phenomena that we leverage for the gyroscopic flight instruments; rigidity and precession. ***Rigidity*** describes a spinning gyroscope's resistance to its orientation being changed. The video below shows a gyroscope inside a *gimbal*. The gimbal rings are able to rotate, but the spinning disk in the centre stays stationary due to rigidity.
+Gyroscopes are spinning disks that exhibit two useful phenomena that we can leverage for the gyroscopic flight instruments; rigidity and precession. ***Rigidity*** describes a spinning gyroscope's resistance to its orientation being changed. The video below shows a gyroscope inside a *gimbal*. The gimbal rings are able to rotate, but the spinning disk in the centre stays stationary due to rigidity.
 
 ![](/assets/images/2024-02-04-aviation-gyroscopic-instruments/gyroscope_operation.gif)
 
