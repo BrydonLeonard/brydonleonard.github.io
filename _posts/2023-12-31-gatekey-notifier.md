@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "The GateKey notifier"
+title:  "GateKey - The notifier"
 date:   2023-12-31
 categories: automation
+tags: automation gatekey
 ---
 
 # The GateKey notifier
