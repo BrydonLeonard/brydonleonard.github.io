@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The South African Elections - The candidates"
+title: "The South African Elections - Manifestos"
 date: 2024-04-28
 categories: gen-ai
 tags: elections
