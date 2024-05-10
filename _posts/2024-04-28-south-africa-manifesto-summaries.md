@@ -34,21 +34,21 @@ Figuring out my way around the rate limits may have been a bit of a pain, but at
 
 ```json
 {
-    "model": "gpt-4-turbo",
-    "messages": [
-	      {
-		        "role": "system",
-		        "content": "You are an experienced political journalist that writes four-paragraph summaries of the manifestos of political parties"
-	      },
-	      {
-		        "role": "user",
-		        "content": "Please summarise the following manifesto:"
-	      },
-	      {
-		        "role": "user",
-		        "content": "<a full manifesto>"
-	      }
-    ]
+  "model": "gpt-4-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an experienced political journalist that writes four-paragraph summaries of the manifestos of political parties"
+    },
+    {
+      "role": "user",
+      "content": "Please summarise the following manifesto:"
+    },
+    {
+      "role": "user",
+      "content": "<a full manifesto>"
+    }
+  ]
 }
 ```
 
