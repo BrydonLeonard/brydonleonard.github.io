@@ -8,7 +8,6 @@ tags: automation
 
 My grandparents can struggle to navigate around their new TV and occasionally get stuck on the wrong input or in some menu that they don't understand. In the past, that's meant that they get stuck without a working TV until someone visits and fixes it for them. This post is about a project I worked on to try help them out. 
 
-
 ## The idea
 
 At a high level, my idea was to build a box with buttons and an IR emitter. Each of the buttons would send some sequence of IR commands to get my grandparents' devices in the desired states. Because I don't live in the same city as them (and would be emigrating before I visited next) my solution also needed to work first time to avoid shipping it back and forth.
@@ -129,7 +128,7 @@ Yes! Here's a video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EjT0cX3k6I8?si=iDY-MABrLRenPPpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I've since couriered it to my family and it seems to be working for my grandparents, so I'd call the project a success.
+I've since couriered it to my family and it seems to be working for my grandparents, so I'd call the project a success. If you want to check out the code, you can find it [on GitHub](https://github.com/BrydonLeonard/TvRemote)[^8].
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbrydonleonard.github.io%2Fautomation%2F2024%2F08%2F15%2Ftv-macro-box.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
@@ -143,3 +142,4 @@ I've since couriered it to my family and it seems to be working for my grandpare
 [^5]: If you are new to electronics things, the "blink" project that comes built into the Arduino IDE will help you make a single-colour LED flash.
 [^6]: Otherwise load shedding starting again in South Africa would render the box basically useless.
 [^7]: Hardcoding the commands might've been a nicer solution, but I didn't have a reliable way to figure out the protocols used by their devices without being there in person or building an IR tester and sending that off first.
+[^8]: One of the other things I tried for this project was the new Arduino IDE. It was fine, but it does seem to encourage single-file scripts, which I'm not a huge fan of.
