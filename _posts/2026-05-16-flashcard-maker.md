@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Flashcard Maker"
-date:   2026-05-17
+title: "Flashcard Maker"
+date: 2026-05-16
 categories: automation
 tags: automation
 ---
